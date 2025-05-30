@@ -1,0 +1,18 @@
+{
+  "scriptFile": "../dist/ShortenUrl/index.js",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"],
+      "route": "shorten"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
